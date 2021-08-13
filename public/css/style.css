@@ -34,3 +34,7 @@ table {
 #lblNuevoTicket {
     font-size: 70px;
 }
+
+.mi_hide{
+    display: none !important;
+}

@@ -64,14 +64,14 @@ class TicketContol{
             return null;
         }
         //se saca del arreglo
-        const ticketAux = this.shift();
+        const ticketAux = this.tickets.shift();
         //se pone escritorio
         ticketAux.escritorio = escritorio;
 
         this.ultimos4.unshift(ticketAux);
 
         if(this.ultimos4.length > 4){
-            this.ultimos4.slice(-1,1);
+            this.ultimos4.pop();
         }
         this.guardarDB();
 
